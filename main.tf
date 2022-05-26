@@ -8,9 +8,9 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "main_s3_bucket" {
-  bucket = "soudeh-bucket-assignment"
+  bucket = "Paras-bucket-assignment"
   tags = {
-    Name        = "Soudeh bucket"
+    Name        = "Paras bucket"
     Environment = "Dev"
   }
 }
@@ -26,5 +26,5 @@ resource "aws_instance" "app_server" {
 variable "instance_name" {
   description = "Value of the Name tag for the EC2 instance"
   type        = string
-  default     = "Soudeh_CC_Assignment1"
+  default     = "Paras_CC_Assignment1"
 }
